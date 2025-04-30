@@ -19,7 +19,7 @@ public class OrderController {
     }
 
     // Create a new order
-    @PostMapping("/create")
+    @PostMapping("/creates")
     @ResponseStatus(HttpStatus.CREATED)
     public Order createOrder(@RequestBody Order order){
         return orderService.createOrder(order);
